@@ -22,7 +22,7 @@ const pokemon = store.state.selectedItem.data;
     </button>
     <button
       v-if="pokemon"
-      @click="store.comm it('navigate', store.state.index + 1)"
+      @click="store.commit('navigate', store.state.index + 1)"
     >
       Next
     </button>
